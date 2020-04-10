@@ -27,3 +27,5 @@ We used following technologies:
  - PHP
  - SQL
 
+## Process Flow Diagram
+![process flow](covid-tracker/images/process.png?raw=true "Home Page")
