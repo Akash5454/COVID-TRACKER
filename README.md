@@ -17,7 +17,7 @@ e-yantra hackthon Idea
 - This website also have toll of active cases and death all over the world with a map based view.
 
 - The interactively describes the real time toll of active cases and death country as well state wise. 
-
+![home screenshot](images/Readme.png?raw=true "Home Page")
 ## Hardware and Software Requirements
 We used following technologies:
 
