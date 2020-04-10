@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+      #sms{
+        height: 200px;
+      }
+    </style>
+</head>
+<body>
+    <form action="sms.php" method="post">
+        <!-- <input type="text" name="number" placeholder="enter number"/>
+        <input type="text" name="text" placeholder="enter message"/>
+        <input type="submit" value="send" name="submit"> -->
+
+                <!-- this is sms form to send the user -->
+                     <div class="container">
+                     <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Number</label>
+                    <textarea type="text" class="form-control" name="number" aria-describedby="emailHelp" placeholder="Enter Number">
+                    <?php echo $_POST['mobileno'];?></textarea>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your sms with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Message</label>
+                    <textarea type="text"  id="sms" class="form-control" name="text" >
+                    Staring Point :-<?php echo $_POST['start']; ?>
+
+                    Ending Point :-<?php echo $_POST['end'];?>
+                    
+                 </textarea>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" name="submit" value="send" class="btn btn-dark"><a href="thanku.html">Submit</a></button>
+                  <button type="submit"   class="btn btn-dark"><a href="map.html">Back</a></button>
+
+</div>
+    </form>
+</body>
+</html>
+<?php
+if(isset($_POST['submit'])){
+    $number=$_POST['number'];
+    $text=$_POST['text'];
+
+$url="www.way2sms.com/api/v1/sendCampaign";
+$message = urlencode($text);// urlencode your message
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_POST, 1);// set post data to true
+curl_setopt($curl, CURLOPT_POSTFIELDS, "apikey=AMC2WQLWOXT7FF6WG5LTEFQB7YT3KKRB&secret=4WPZL1W9NSN2DEMT&usetype=stage&phone=$number&senderid=writeYourMailId&message=$message");// post data
+// query parameter values must be given without squarebrackets.
+ // Optional Authentication:
+curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+$result = curl_exec($curl);
+curl_close($curl);
+echo $result;
+
+
+}
+?>
