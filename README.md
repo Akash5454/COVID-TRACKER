@@ -18,7 +18,7 @@ e-yantra hackthon Idea
 
 - The interactively describes the real time toll of active cases and death country as well state wise. 
 
-![home screenshot](covid-tracker/images/Radme.PNG?raw=true "Home Page")
+![home screenshot](covid-tracker/images/home.png?raw=true "Home Page")
 ## Hardware and Software Requirements
 We used following technologies:
 
