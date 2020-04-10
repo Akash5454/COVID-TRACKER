@@ -29,3 +29,6 @@ We used following technologies:
 
 ## Process Flow Diagram
 ![process flow](covid-tracker/images/p.png?raw=true "Home Page")
+
+## Data Flow Diagram
+![process flow](covid-tracker/images/dfd.png?raw=true "Home Page")
