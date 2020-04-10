@@ -20,7 +20,7 @@ The interactively describes the real time toll of active cases and death country
 # Hardware and Software Requirements
 We used following technologies:
 
-Markup: *HTML/CSS
-        *Bootstrap
-        *PHP
-        *SQL
+ -HTML/CSS
+ -Bootstrap
+ -PHP
+ -SQL
