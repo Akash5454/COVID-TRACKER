@@ -1,6 +1,6 @@
 # COVID-TRACKER
 e-yantra hackthon Idea 
-# Description
+## Description
 COVID-19 is an infectious disease which spreads from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. 
 
 If the droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth.
@@ -17,10 +17,11 @@ This saves the location on the secure database and later it can be accessed if h
 This website also have toll of active cases and death all over the world with a map based view.
 
 The interactively describes the real time toll of active cases and death country as well state wise. 
-# Hardware and Software Requirements
+
+## Hardware and Software Requirements
 We used following technologies:
 
- -HTML/CSS
- -Bootstrap
- -PHP
- -SQL
+ - HTML/CSS
+ - Bootstrap
+ - PHP
+ - SQL
