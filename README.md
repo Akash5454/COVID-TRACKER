@@ -1,5 +1,5 @@
 # COVID-TRACKER
-e-yantra hackthon Idea 
+IBM hackthon Idea 
 ## Description
 - COVID-19 is an infectious disease which spreads from person to person through small droplets from the nose or mouth which are spread     when a person with COVID-19 coughs or exhales. 
 
